@@ -214,8 +214,6 @@ select option {
   text-transform: uppercase;
 }
 
-.badge-whisperx { background: rgba(80, 130, 220, 0.18); color: #7ab0f0; }
-.badge-aeneas   { background: rgba(80, 200, 130, 0.18); color: #60c890; }
 .badge-ready    { background: rgba(80, 184, 120, 0.18); color: var(--success); }
 .badge-processing { background: var(--accent-dim); color: var(--accent); }
 .badge-error    { background: var(--danger-dim); color: var(--danger); }
@@ -278,47 +276,6 @@ select option {
   margin-top: 8px;
   font-size: 0.85rem;
   color: var(--text);
-}
-
-/* ---------- method selector ---------- */
-
-.method-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.method-card {
-  border: 2px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 14px 16px;
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
-  text-align: left;
-  background: var(--bg-input);
-}
-
-.method-card:hover {
-  border-color: var(--border-focus);
-  background: var(--bg-hover);
-}
-
-.method-card.selected {
-  border-color: var(--accent);
-  background: var(--accent-dim);
-}
-
-.method-card-title {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: var(--text);
-}
-
-.method-card-desc {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.4;
 }
 
 /* ---------- tape list ---------- */
@@ -709,10 +666,6 @@ select option {
 /* ---------- responsive ---------- */
 
 @media (max-width: 600px) {
-  .method-cards {
-    grid-template-columns: 1fr;
-  }
-
   .speed-row {
     margin-left: 0;
     margin-top: 8px;
